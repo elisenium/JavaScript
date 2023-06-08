@@ -1,0 +1,23 @@
+<section>
+
+    <form action="/exoplanets/select-hclass" method="post">
+        <div>
+        <select name="hClass">
+            <option value="Mésoplanète">Mésoplanète</option>
+            <option value="Psychroplanète">Psychroplanète</option>
+            <option value="Thermoplanète">Thermoplanète</option>
+            <option value="Hypopsychroplanète">Hypopsychroplanète</option>
+            <option value="Non Habitable">Non Habitable</option>
+        </select>
+        </div>
+        <div>
+            <input type="submit" value="Afficher">
+        </div>
+    </form>
+    
+</section>
+{{#if isEmpty}}
+<section>
+        <p class="">{{listErrors}}</p>
+</section>
+{{/if}}
